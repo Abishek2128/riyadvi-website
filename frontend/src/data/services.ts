@@ -1,14 +1,90 @@
+export type SceneType = "web" | "app" | "marketing" | "arvr" | "model" | "uiux";
+
 export type Service = {
   slug: string;
   title: string;
   short: string;
+  scene: SceneType;
+  problem: string;
+  solution: string;
+  features: string[];
+  useCases: string[];
+  stack: string[];
 };
 
+export const processSteps: [string, string][] = [
+  ["Discover", "We learn your goals, users and constraints."],
+  ["Design", "We shape the experience before we build it."],
+  ["Build", "We develop in short cycles you can review."],
+  ["Launch", "We test, optimize and release with confidence."],
+  ["Grow", "We measure results and keep improving."],
+];
+
 export const services: Service[] = [
-  { slug: "web-development", title: "Web Development", short: "Fast, scalable websites and web apps." },
-  { slug: "app-development", title: "App Development", short: "Mobile apps for iOS and Android." },
-  { slug: "digital-marketing", title: "Digital Marketing", short: "SEO, ads and content that bring leads." },
-  { slug: "ar-vr", title: "AR / VR", short: "Immersive experiences people remember." },
-  { slug: "3d-modeling", title: "3D Modeling", short: "Product and architectural 3D assets." },
-  { slug: "ui-ux-design", title: "UI/UX Design", short: "Interfaces designed around your customers." },
+  {
+    slug: "web-development",
+    title: "Web Development",
+    short: "Fast, scalable websites and web apps.",
+    scene: "web",
+    problem: "Slow, outdated websites lose visitors and make a business look less trustworthy.",
+    solution: "We build fast, secure, responsive websites and web apps that are easy to grow and easy to manage.",
+    features: ["Responsive design", "Fast page loads", "SEO-ready structure", "Admin and content tools", "Secure forms and APIs", "Analytics setup"],
+    useCases: ["Corporate websites", "E-commerce stores", "Booking platforms", "Customer portals"],
+    stack: ["React", "Next.js", "Node.js", "MongoDB", "MySQL", "WordPress"],
+  },
+  {
+    slug: "app-development",
+    title: "App Development",
+    short: "Mobile apps for iOS and Android.",
+    scene: "app",
+    problem: "Customers expect to reach you from their phone, and a website alone often cannot deliver that experience.",
+    solution: "We design and build mobile apps that feel smooth, work reliably and connect to your business systems.",
+    features: ["iOS and Android support", "Push notifications", "Offline-friendly flows", "Secure login", "Payment integration", "Backend and API"],
+    useCases: ["Service booking", "Delivery and tracking", "Memberships", "Internal team tools"],
+    stack: ["React Native", "Node.js", "MongoDB", "Firebase", "REST APIs"],
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    short: "SEO, ads and content that bring leads.",
+    scene: "marketing",
+    problem: "A good product still struggles when the right customers cannot find it online.",
+    solution: "We plan and run marketing that brings qualified visitors and tracks what actually turns into enquiries.",
+    features: ["SEO strategy", "Search and social ads", "Content planning", "Conversion tracking", "Landing pages", "Monthly reporting"],
+    useCases: ["Local businesses", "Product launches", "Lead generation", "Brand awareness"],
+    stack: ["Google Analytics", "Search Console", "Meta Ads", "Google Ads", "Email tools"],
+  },
+  {
+    slug: "ar-vr",
+    title: "AR / VR",
+    short: "Immersive experiences people remember.",
+    scene: "arvr",
+    problem: "Complex products and spaces are hard to explain with flat images and text.",
+    solution: "We create AR and VR experiences that let people see, explore and understand your offering in an immersive way.",
+    features: ["Product visualization", "Virtual tours", "Interactive training", "Web-based AR", "3D scene design", "Device-friendly delivery"],
+    useCases: ["Real estate walkthroughs", "Product demos", "Training simulations", "Events and exhibitions"],
+    stack: ["Three.js", "WebXR", "Unity", "Blender", "Spline"],
+  },
+  {
+    slug: "3d-modeling",
+    title: "3D Modeling",
+    short: "Product and architectural 3D assets.",
+    scene: "model",
+    problem: "Physical products and designs are expensive to photograph, change and present from every angle.",
+    solution: "We build detailed, optimized 3D models for web, marketing, visualization and production.",
+    features: ["Product models", "Architectural visualization", "Texturing and materials", "Web-optimized exports", "Turntable renders", "Animation-ready assets"],
+    useCases: ["E-commerce product views", "Interior and exterior design", "Advertising visuals", "Prototypes"],
+    stack: ["Blender", "Three.js", "Substance", "glTF", "Spline"],
+  },
+  {
+    slug: "ui-ux-design",
+    title: "UI/UX Design",
+    short: "Interfaces designed around your customers.",
+    scene: "uiux",
+    problem: "Confusing interfaces make people leave before they buy, book or sign up.",
+    solution: "We research how people use your product and design clear, consistent interfaces that guide them to act.",
+    features: ["User research", "Wireframes and prototypes", "Design systems", "Usability testing", "Accessibility checks", "Developer handoff"],
+    useCases: ["Website redesigns", "App interfaces", "Dashboards", "Onboarding flows"],
+    stack: ["Figma", "Design tokens", "Prototyping", "Tailwind CSS"],
+  },
 ];

@@ -35,7 +35,7 @@ function Network({ count, isMobile }: { count: number; isMobile: boolean }) {
 
   useFrame((state, delta) => {
     const g = group.current;
-    const targetX = isMobile ? 0 : viewport.width * 0.27;
+    const targetX = isMobile ? 0 : viewport.width * 0.2;
     g.rotation.y += delta * 0.15;
     g.rotation.x = THREE.MathUtils.lerp(g.rotation.x, -state.pointer.y * 0.5, 0.05);
     g.position.x = THREE.MathUtils.lerp(g.position.x, state.pointer.x * 0.4 + targetX, 0.05);
