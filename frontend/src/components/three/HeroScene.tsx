@@ -33,7 +33,7 @@ function Network({ count }: { count: number }) {
     const g = group.current;
     g.rotation.y += delta * 0.15;
     g.rotation.x = THREE.MathUtils.lerp(g.rotation.x, -state.pointer.y * 0.5, 0.05);
-    g.position.x = THREE.MathUtils.lerp(g.position.x, state.pointer.x * 0.4 + 1.2, 0.05);
+    g.position.x = THREE.MathUtils.lerp(g.position.x, state.pointer.x * 0.4 + 2.4, 0.05);
     const s = 1 + (window.scrollY / window.innerHeight) * 0.4;
     g.scale.setScalar(THREE.MathUtils.lerp(g.scale.x, s, 0.1));
   });
@@ -54,7 +54,7 @@ function Network({ count }: { count: number }) {
       </lineSegments>
       <mesh>
         <icosahedronGeometry args={[0.9, 1]} />
-        <meshStandardMaterial color="#D4AF37" metalness={0.9} roughness={0.25} />
+        <meshStandardMaterial color="#D4AF37" metalness={0.6} roughness={0.3} emissive="#D4AF37" emissiveIntensity={0.35} />
       </mesh>
     </group>
   );
