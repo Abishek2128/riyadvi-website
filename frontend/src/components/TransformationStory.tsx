@@ -49,7 +49,7 @@ export default function TransformationStory() {
   );
 
   return (
-    <section ref={root} className="flex min-h-screen flex-col justify-center px-6">
+    <section ref={root} className="flex min-h-screen flex-col justify-center px-6 pt-24">
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="mb-4 text-3xl font-bold md:text-5xl">
           From challenge to <span className="text-gold">growth</span>
