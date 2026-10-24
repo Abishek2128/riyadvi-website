@@ -1,13 +1,12 @@
 "use client";
 import { motion } from "motion/react";
 
-// Replace the TODO lines with real milestones from the Riyadvi website
 const milestones = [
   ["2021", "Riyadvi Software Technologies founded"],
-  ["2022", "TODO: first major milestone"],
-  ["2023", "TODO: second milestone"],
-  ["2024", "TODO: third milestone"],
-  ["2025", "TODO: fourth milestone"],
+  ["2022", "Write a real milestone here"],
+  ["2023", "Write a real milestone here"],
+  ["2024", "Write a real milestone here"],
+  ["2025", "Write a real milestone here"],
 ];
 
 export default function WhyRiyadvi() {
