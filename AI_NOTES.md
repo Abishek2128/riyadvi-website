@@ -9,3 +9,5 @@
 - Tool: Claude
 - Purpose: GSAP ScrollTrigger pinned timeline for the 6-step approach section
 - Manual changes: (write what you change, for example the step text or timing)
+
+- Debugging: Drei <Html> labels caused a React "unmount a root while rendering" error on Next 16. I replaced them with canvas-texture sprites, which also avoids DOM overlays on the 3D canvas.
