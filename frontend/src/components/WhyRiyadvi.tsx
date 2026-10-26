@@ -2,11 +2,10 @@
 import { motion } from "motion/react";
 
 const milestones = [
-  ["2021", "Riyadvi Software Technologies founded"],
-  ["2022", "Write a real milestone here"],
-  ["2023", "Write a real milestone here"],
-  ["2024", "Write a real milestone here"],
-  ["2025", "Write a real milestone here"],
+  ["2021", "Company foundation: launched with an innovative vision and technology solutions."],
+  ["2022", "Market expansion: added app development and digital marketing."],
+  ["2023", "International markets: expanded our client base to include Australia."],
+  ["2024", "Global recognition: received the Star of Excellence award from the National Integrity Cultural Academy."],
 ];
 
 export default function WhyRiyadvi() {
