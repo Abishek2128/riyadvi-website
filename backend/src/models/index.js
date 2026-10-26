@@ -81,7 +81,12 @@ const Application = mongoose.model(
       phone: String,
       position: { type: String, required: true },
       message: String,
-      resumeUrl: String,
+      resume: {
+        filename: String,
+        mimetype: String,
+        size: Number,
+        data: Buffer,
+      },
       status: statusField,
     },
     options

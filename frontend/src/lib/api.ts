@@ -6,6 +6,11 @@ export type ApiResult = {
   errors?: { field: string; message: string }[];
 };
 
+const NETWORK_ERROR: ApiResult = {
+  success: false,
+  message: "Could not reach the server. Please try again.",
+};
+
 export async function postForm(
   path: string,
   data: Record<string, unknown>
@@ -18,6 +23,15 @@ export async function postForm(
     });
     return await res.json();
   } catch {
-    return { success: false, message: "Could not reach the server. Please try again." };
+    return NETWORK_ERROR;
+  }
+}
+
+export async function postMultipart(path: string, body: FormData): Promise<ApiResult> {
+  try {
+    const res = await fetch(`${API}/api${path}`, { method: "POST", body });
+    return await res.json();
+  } catch {
+    return NETWORK_ERROR;
   }
 }
