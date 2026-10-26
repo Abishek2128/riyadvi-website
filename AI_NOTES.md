@@ -17,3 +17,9 @@
 - Purpose: one data-driven /services/[slug] template, reusable R3F scenes, and Express + Zod + Mongoose form APIs
 - Debugging: fixed a Next.js 16 error by wrapping the awaited params in Suspense; fixed a wrong-folder issue where new backend files were not in the running project
 - Manual changes: (write what you really changed)
+
+## About page
+- Tool: Claude
+- Purpose: animated timeline with scroll-linked line (Motion), data-driven milestones
+- Source of content: real company facts from the Riyadvi website
+- Manual changes: (write what you really changed)
