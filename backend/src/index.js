@@ -6,8 +6,10 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const formRoutes = require("./routes/forms");
+const adminRoutes = require("./routes/admin");
 
 const app = express();
+app.set("trust proxy", 1);
 app.use(cors({ origin: (process.env.CLIENT_URL || "*").split(",") }));
 app.use(express.json({ limit: "1mb" }));
 
@@ -18,6 +20,7 @@ app.get("/api/health", (_req, res) =>
   res.json({ success: true, message: "API running" })
 );
 app.use("/api", formRoutes);
+app.use("/api/admin", adminRoutes);
 
 app.use((_req, res) =>
   res.status(404).json({ success: false, message: "Route not found" })
