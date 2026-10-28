@@ -142,3 +142,15 @@ No external images or 3D models. Font: Inter (Google Fonts, through `next/font`)
 ## Future improvements
 
 CMS integration (Strapi or Sanity) for blog, jobs and projects, email notifications, cloud file storage, a consultation booking page with Calendly, admin user accounts with secure cookies, automated tests, and a Lighthouse and real-device performance pass.
+
+## Known limitations
+
+- Portfolio, blog and careers content is sample content. The structure is what matters, and real content can be added in one data file each.
+- Resumes are stored in MongoDB for simplicity. Production should use cloud file storage.
+- The free Render plan sleeps when idle, so the first API request can take about 50 seconds.
+- Email notifications and Calendly are not implemented.
+- Services, projects, posts and jobs live in typed data files behind a data-access layer, not in database models.
+- The consultation API exists but has no page yet.
+- Homepage service cards use lightweight animated visuals. Full 3D scenes are on the service pages, and weak devices get a static poster.
+- One admin account. The token is kept in session storage, and a production site would use a secure cookie.
+- No team section or device-motion hero yet.
