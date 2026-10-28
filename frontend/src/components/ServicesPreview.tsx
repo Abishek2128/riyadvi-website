@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { services } from "@/data/services";
+import ServiceVisual from "@/components/ServiceVisual";
 
 export default function ServicesPreview() {
   return (
@@ -17,13 +18,13 @@ export default function ServicesPreview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            whileHover={{ y: -8, rotateX: 4, rotateY: -4 }}
-            style={{ transformPerspective: 800 }}
+            whileHover={{ y: -8 }}
           >
             <Link
               href={`/services/${s.slug}`}
-              className="block h-full rounded-2xl border border-gold/20 bg-gradient-to-br from-white/10 to-transparent p-8 transition hover:border-gold"
+              className="block h-full rounded-2xl border border-gold/20 bg-gradient-to-br from-white/10 to-transparent p-6 transition hover:border-gold"
             >
+              <ServiceVisual type={s.scene} />
               <h3 className="text-xl font-semibold">{s.title}</h3>
               <p className="mt-3 text-white/60">{s.short}</p>
               <span className="mt-6 inline-block text-sm text-gold">Learn more →</span>

@@ -1,3 +1,4 @@
+import { projects } from "@/data/projects";
 import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -32,23 +33,42 @@ async function ServiceContent({
   if (!service) notFound();
 
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
+  const relatedProjects = projects.filter((p) => p.services.includes(service.slug));
 
   return (
     <main>
-      <section className="mx-auto grid max-w-7xl items-center gap-8 px-6 pb-16 pt-32 md:grid-cols-2">
-        <div>
-          <p className="mb-3 text-sm uppercase tracking-widest text-gold">Our services</p>
-          <h1 className="text-4xl font-bold md:text-6xl">{service.title}</h1>
-          <p className="mt-6 max-w-lg text-lg text-white/70">{service.short}</p>
-          <Link
-            href="/contact"
-            className="mt-8 inline-block rounded-full bg-gold px-7 py-3 font-semibold text-black transition hover:bg-gold-soft"
-          >
-            Get a Quote
-          </Link>
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <h2 className="mb-6 text-3xl font-bold">
+          Related <span className="text-gold">work</span>
+        </h2>
+        <div className="grid gap-4 md:grid-cols-3">
+          {relatedProjects.map((p) => (
+            <Link
+              key={p.slug}
+              href={`/portfolio/${p.slug}`}
+              className="rounded-xl border border-gold/20 bg-white/5 p-5 transition hover:border-gold"
+            >
+              <p className="text-xs uppercase tracking-widest text-gold">{p.industry}</p>
+              <h3 className="mt-2 font-semibold">{p.client}</h3>
+              <p className="mt-2 text-sm text-white/60">{p.summary}</p>
+            </Link>
+          ))}
         </div>
-        <div className="h-[340px] md:h-[440px]">
-          <ServiceHero type={service.scene} />
+        <Link href="/portfolio" className="mt-4 inline-block text-gold hover:underline">
+          View all projects →
+        </Link>
+        <h3 className="mb-4 mt-12 text-xl font-semibold">Other services</h3>
+        <div className="grid gap-4 md:grid-cols-3">
+          {others.map((s) => (
+            <Link
+              key={s.slug}
+              href={`/services/${s.slug}`}
+              className="rounded-xl border border-gold/20 bg-white/5 p-5 transition hover:border-gold"
+            >
+              <h3 className="font-semibold">{s.title}</h3>
+              <p className="mt-2 text-sm text-white/60">{s.short}</p>
+            </Link>
+          ))}
         </div>
       </section>
 

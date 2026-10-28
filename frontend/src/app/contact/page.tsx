@@ -43,6 +43,18 @@ export default function ContactPage() {
           )}
         </div>
       </div>
+              <div className="mt-8 overflow-hidden rounded-2xl border border-gold/20">
+          <iframe
+            title="Riyadvi office location"
+            src="https://www.google.com/maps?q=Krishnapuram%2C%20Mylapore%2C%20Chennai%20600004&output=embed"
+            className="h-64 w-full"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+        <p className="mt-4 text-sm text-white/60">
+          Krishnapuram, Mylapore, Chennai 600004 · info@riyadvisoftwaretechnologies.com
+        </p>
       <div className="rounded-2xl border border-gold/20 bg-white/5 p-8">
         <ContactForm />
       </div>
