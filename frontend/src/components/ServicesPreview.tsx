@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { services } from "@/data/services";
+import type { Service } from "@/data/services";
 import ServiceVisual from "@/components/ServiceVisual";
 
-export default function ServicesPreview() {
+export default function ServicesPreview({ services }: { services: Service[] }) {
   return (
     <section id="services" className="mx-auto max-w-7xl px-6 py-24">
       <h2 className="mb-12 text-3xl font-bold md:text-5xl">

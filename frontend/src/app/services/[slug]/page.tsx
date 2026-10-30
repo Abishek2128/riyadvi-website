@@ -2,11 +2,12 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { services, processSteps } from "@/data/services";
-import { projects } from "@/data/projects";
+import { processSteps } from "@/data/services";
+import { getServices, getService, getProjects } from "@/lib/content";
 import ServiceHero from "@/components/ServiceHero";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const services = await getServices();
   return services.map((s) => ({ slug: s.slug }));
 }
 
@@ -16,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const s = services.find((x) => x.slug === slug);
+  const s = await getService(slug);
   return {
     title: s ? `${s.title} | Riyadvi` : "Service | Riyadvi",
     description: s?.short,
@@ -29,9 +30,10 @@ async function ServiceContent({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const service = services.find((s) => s.slug === slug);
+  const service = await getService(slug);
   if (!service) notFound();
 
+  const [services, projects] = await Promise.all([getServices(), getProjects()]);
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
   const matched = projects.filter((p) => p.services.includes(service.slug));
   const hasMatch = matched.length > 0;
