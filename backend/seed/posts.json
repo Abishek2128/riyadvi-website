@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "plan-a-website-redesign-without-losing-traffic",
+    "title": "How to plan a website redesign without losing your traffic",
+    "excerpt": "A redesign should improve results, not reset them. Here is how to protect your search traffic while you modernise.",
+    "category": "Web Development",
+    "tags": [
+      "SEO",
+      "Planning",
+      "Website"
+    ],
+    "author": "Riyadvi Team",
+    "date": "2026-10-12",
+    "featured": true,
+    "body": [
+      {
+        "h": "Start with what already works",
+        "p": "Before you change anything, list the pages that bring visitors and enquiries today. Your analytics and Search Console show which ones matter. These pages are your safety list: keep their addresses, key content and headings wherever you can."
+      },
+      {
+        "h": "Keep your page addresses stable",
+        "p": "If an address has to change, set up a permanent redirect from the old address to the new one. Without redirects, visitors and search engines hit dead ends, and the ranking you earned over the years can drop."
+      },
+      {
+        "h": "Test before you launch",
+        "p": "Check speed, mobile layout and forms on real devices. Compare the new site against your safety list, and watch your traffic closely for the first few weeks after launch so you can fix problems early."
+      }
+    ]
+  },
+  {
+    "slug": "web-app-or-mobile-app-first",
+    "title": "Web app or mobile app: which one does your business need first?",
+    "excerpt": "Both can be right, but not at the same time. A simple way to decide where to start.",
+    "category": "App Development",
+    "tags": [
+      "Apps",
+      "Strategy",
+      "Startups"
+    ],
+    "author": "Riyadvi Team",
+    "date": "2026-10-05",
+    "body": [
+      {
+        "h": "Start from how customers reach you",
+        "p": "If most customers find you through search or links, a web app reaches everyone with one build. If they use your service daily and on the move, a mobile app can feel faster and more personal."
+      },
+      {
+        "h": "Think about the first version",
+        "p": "A web app is usually quicker and cheaper to launch and update, which makes it a good way to test an idea. A mobile app makes more sense once you know which features people use most."
+      },
+      {
+        "h": "You do not have to choose forever",
+        "p": "Many products begin on the web and add a mobile app later, sharing the same backend. Plan the backend and design system once, and both versions benefit."
+      }
+    ]
+  },
+  {
+    "slug": "digital-marketing-basics-for-small-business",
+    "title": "Digital marketing basics every small business should set up first",
+    "excerpt": "Three foundations to put in place before you spend anything on ads.",
+    "category": "Digital Marketing",
+    "tags": [
+      "Marketing",
+      "SEO",
+      "Analytics"
+    ],
+    "author": "Riyadvi Team",
+    "date": "2026-09-28",
+    "body": [
+      {
+        "h": "Know what you want from marketing",
+        "p": "Decide on one clear goal, such as more enquiries or more bookings. A clear goal tells you which channels to use and how to judge whether they work."
+      },
+      {
+        "h": "Set up tracking first",
+        "p": "Install analytics and track the actions that matter, like form submissions and calls. Without tracking, you cannot tell which campaigns bring real customers."
+      },
+      {
+        "h": "Make your site ready for visitors",
+        "p": "Ads and posts send people to your website, so it must load fast, work on phones and make the next step obvious. Fix the basics there before you increase your budget."
+      }
+    ]
+  },
+  {
+    "slug": "3d-and-ar-for-product-presentation",
+    "title": "What 3D and AR can do for product presentation",
+    "excerpt": "Customers want to see a product from every angle. 3D and AR let them do it before they buy.",
+    "category": "AR / VR & 3D",
+    "tags": [
+      "3D",
+      "AR",
+      "Product"
+    ],
+    "author": "Riyadvi Team",
+    "date": "2026-09-15",
+    "body": [
+      {
+        "h": "Show more than photos",
+        "p": "A 3D model lets customers rotate and zoom a product, which answers many questions that photos cannot. It is especially useful for products where shape and finish matter."
+      },
+      {
+        "h": "Bring it into the customer's space",
+        "p": "With augmented reality, people can place a product in their room or hold it up in front of them. That helps them judge size and fit with more confidence."
+      },
+      {
+        "h": "Keep it light",
+        "p": "3D must not slow the page down. Use optimised models, load them only when needed, and offer a simple fallback image for weaker phones."
+      }
+    ]
+  },
+  {
+    "slug": "ux-improvements-that-lift-conversions",
+    "title": "UX improvements that lift conversions",
+    "excerpt": "Small interface changes often beat big redesigns. Three places to look first.",
+    "category": "UI/UX Design",
+    "tags": [
+      "UX",
+      "Conversion",
+      "Design"
+    ],
+    "author": "Riyadvi Team",
+    "date": "2026-09-02",
+    "body": [
+      {
+        "h": "Make the main action obvious",
+        "p": "Each page should have one main thing you want visitors to do. Give it a clear button, a clear label and enough space around it."
+      },
+      {
+        "h": "Shorten your forms",
+        "p": "Every extra field is a reason to leave. Ask only for what you need now, and collect the rest later in the conversation."
+      },
+      {
+        "h": "Test with real users",
+        "p": "Watching even five people use your site shows problems your team no longer sees. Fix the issues that come up again and again first."
+      }
+    ]
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "puratap",
+    "client": "Puratap",
+    "industry": "Water filtration",
+    "summary": "A clear, trustworthy website that presents the brand and makes it easy to get in touch.",
+    "challenge": "The client needed an online presence that explains their offering simply and builds trust with new customers.",
+    "solution": "We designed and built a fast, responsive website with a clear structure, strong calls to action and an enquiry form.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "MongoDB"
+    ],
+    "results": [
+      "A modern website that works on phones and desktops",
+      "A clear path from visitor to enquiry",
+      "A base the client can keep growing"
+    ],
+    "services": [
+      "web-development",
+      "ui-ux-design"
+    ]
+  },
+  {
+    "slug": "wanaromah",
+    "client": "Wanaromah Perfumers",
+    "industry": "Fragrance and retail",
+    "summary": "A product-focused experience with an interactive 3D presentation of the brand.",
+    "challenge": "Fragrances are hard to sell online because people cannot smell or hold them, so presentation matters.",
+    "solution": "We created a refined storefront look and an interactive 3D object that lets visitors explore the brand visually.",
+    "technologies": [
+      "Three.js",
+      "React Three Fiber",
+      "Next.js",
+      "Blender"
+    ],
+    "results": [
+      "A distinctive visual identity online",
+      "Visitors can explore the product in 3D",
+      "A product page structure that is easy to extend"
+    ],
+    "services": [
+      "3d-modeling",
+      "web-development"
+    ],
+    "scene": "model"
+  },
+  {
+    "slug": "laxmi-astro-ai",
+    "client": "Laxmi Astro AI",
+    "industry": "AI and astrology",
+    "summary": "A mobile-first app experience, presented here as an interactive 3D device.",
+    "challenge": "Users expect quick, personal answers on their phone, with a simple and calm interface.",
+    "solution": "We designed a focused mobile experience with a clear flow, a secure backend and AI-assisted responses.",
+    "technologies": [
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "AI APIs"
+    ],
+    "results": [
+      "A simple app flow that is easy to learn",
+      "A backend ready for new features",
+      "A design system the team can reuse"
+    ],
+    "services": [
+      "app-development",
+      "ui-ux-design"
+    ],
+    "scene": "app"
+  },
+  {
+    "slug": "tony-and-guy",
+    "client": "Tony & Guy",
+    "industry": "Salon and beauty",
+    "summary": "Digital marketing and a brand-consistent online presence for a salon brand.",
+    "challenge": "A well-known brand needs consistent, attractive content across channels to keep customers booking.",
+    "solution": "We planned content, designed posters and ran campaigns so the brand looks consistent and reaches the right audience.",
+    "technologies": [
+      "Meta Ads",
+      "Google Analytics",
+      "Design tools"
+    ],
+    "results": [
+      "Consistent branded content across channels",
+      "Campaigns tracked with clear reporting",
+      "A repeatable monthly content plan"
+    ],
+    "services": [
+      "digital-marketing",
+      "ui-ux-design"
+    ]
+  },
+  {
+    "slug": "sivam-physio-care",
+    "client": "Sivam Physio Care",
+    "industry": "Healthcare",
+    "summary": "A calm, easy-to-use website that helps patients understand services and book a visit.",
+    "challenge": "Patients want clear information and an easy way to book, without confusing medical language.",
+    "solution": "We built a simple, accessible website with plain-language service pages and a quick contact flow.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "Node.js"
+    ],
+    "results": [
+      "Clear service information for patients",
+      "A simple booking enquiry flow",
+      "A site that loads quickly on mobile"
+    ],
+    "services": [
+      "web-development",
+      "digital-marketing"
+    ]
+  },
+  {
+    "slug": "cube-dental",
+    "client": "Cube Dental",
+    "industry": "Healthcare",
+    "summary": "A clean, trustworthy website for a dental practice, designed around patient needs.",
+    "challenge": "A dental practice needs to look professional and make booking an appointment effortless.",
+    "solution": "We designed a clean interface with clear treatments, trust signals and a straightforward appointment enquiry.",
+    "technologies": [
+      "React",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "results": [
+      "A professional first impression online",
+      "Clear treatment information",
+      "Easy enquiries from phones"
+    ],
+    "services": [
+      "web-development",
+      "ui-ux-design"
+    ]
+  }
+]

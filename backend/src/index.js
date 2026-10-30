@@ -6,6 +6,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const formRoutes = require("./routes/forms");
+const contentRoutes = require("./routes/content");
 const adminRoutes = require("./routes/admin");
 
 const app = express();
@@ -20,6 +21,7 @@ app.get("/api/health", (_req, res) =>
   res.json({ success: true, message: "API running" })
 );
 app.use("/api", formRoutes);
+app.use("/api", contentRoutes);
 app.use("/api/admin", adminRoutes);
 
 app.use((_req, res) =>
